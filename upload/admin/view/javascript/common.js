@@ -137,7 +137,7 @@ $(document).on('submit', 'form', function(e) {
 
                 $('.alert-dismissible').remove();
                 $(element).find('.is-invalid').removeClass('is-invalid');
-                $(element).find('.invalid-feedback').removeClass('d-block');
+                $(element).find('.invalid-feedback').html('').removeClass('d-block');
 
                 if (json['redirect']) {
                     location = json['redirect'];
